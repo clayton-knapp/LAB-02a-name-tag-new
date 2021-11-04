@@ -12,23 +12,48 @@
         <h1>Welcome to my nametag website!</h1>
     </header>
     <main>
-        <h4>I present to you the nametag: </h3>
-        <div class="name-tag">
-            <header class="top">
+        <h4>Change the name-tag to any name you like:</h3>
+        <input classtype="text" class="input-box" id="input-box" placeholder="enter name here">
+        <button id="button">Click here to change name</button>
+        <br>
+        <h4>Select the color:</h2>
+        <button class=color-buttons id=pink>pink</button>
+        <button class=color-buttons id=lightgreen>lightgreen</button>
+        <button class=color-buttons id=lightblue>lightblue</button>
+        <br>
+        <h4>Add pronouns to the name tag</h4>
+        <input type="text" class="input-box" id="pronouns-input" placeholder ="enter pronouns here">
+        <button id="pronouns-button">Click here to add pronouns</button>
+        <br>
+        <h4>Change the font of your name:</h4>
+        <select name="font-dropdown" id="font-dropdown" class="font-dropdown">
+            <optgroup label="Fonts">
+              <option value="Arial">Arial</option>
+              <option value="Georgia">Georgia</option>
+              <option value="Impact">Impact</option>
+              <option value="Verdana">Verdana</option>
+              <option value="cursive">cursive</option>
+            </optgroup>
+        </select>
+        <button id="font-button">Click here to change font</button>
+        <div class="name-tag" id="name-tag">
+            <div class="top">
                 <h2>HELLO</h2>
                 <h3>my name is</h3>
-            </header>
-            <main class="middle">
-                <p class=name>Clayton Knapp</p>
-            </main>
-            <footer class="bottom">
+            </div>
+            <div class="middle">
+                <p class=name id="name">Clayton Knapp</p>
+                <p class=name>(<span class="name" id="pronouns-display"></span>)</p>
+            </div>
+            <div class="bottom">
                 <div></div>
-            </footer>
+            </div>
         </div>
     </main>
     <footer>
         <p>By: Clayton Knapp</p>
         <p>Alchemy Nov 21 cohort</p>
     </footer>
+    <script src="app.js" type="module"></script>
 </body>
 </html>
